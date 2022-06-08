@@ -1,0 +1,61 @@
+{
+	"info": {
+		"_postman_id": "74882376-539f-4199-b5c8-673a8d75b049",
+		"name": "BlockChain(GO) - Weather",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7437574"
+	},
+	"item": [
+		{
+			"name": "Add Weather Block By City Name",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"city\": \"New York\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/add-weather-block?city=New York",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"add-weather-block"
+					],
+					"query": [
+						{
+							"key": "city",
+							"value": "New York"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Blocks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/get-blocks",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"get-blocks"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
